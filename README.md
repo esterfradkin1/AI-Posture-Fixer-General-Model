@@ -32,7 +32,6 @@ flowchart TD
 
   * Green for Good Posture
   * Red for Bad Posture
-* Exported model components for use in external applications
 
 ## Model Evaluation
 
