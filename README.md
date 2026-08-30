@@ -284,16 +284,9 @@ The training scripts create a `models` directory containing files such as:
 
 Possible future improvements include:
 
-* Personalized posture calibration
 * Collection of a larger and more diverse dataset
-* Improved Bad Posture recall
 * Identification of specific posture problems
 * Audio or desktop notifications
 * Posture history and analytics
-* Raspberry Pi deployment
 * A graphical user interface
 * Integration with a mobile or web application
-
-
-Electrical Engineering and Computer Science
-The Hebrew University of Jerusalem
