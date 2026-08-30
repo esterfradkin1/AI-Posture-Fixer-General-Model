@@ -286,7 +286,6 @@ Possible future improvements include:
 
 * Collection of a larger and more diverse dataset
 * Identification of specific posture problems
+* Improve and develop further graphical user interface
 * Audio or desktop notifications
 * Posture history and analytics
-* A graphical user interface
-* Integration with a mobile or web application
