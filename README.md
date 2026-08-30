@@ -57,12 +57,15 @@ Improving the recall for Bad Posture is an important direction for future develo
 
 ## Repository Structure
 
-| File                                    | Description                                                                                                                                                  |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `cross_validation.py`                   | Loads the training and validation datasets, preprocesses the data, performs KNN grid search, evaluates the selected model, and generates validation figures. |
-| `train_general_model_with_train+val.py` | Retrains the KNN model using the combined training and validation datasets and evaluates it on an independent test set.                                      |
-| `run_live_posture_monitor.py`           | Extracts posture features from a webcam stream, performs posture classification, smooths predictions, and displays live feedback.                            |
-| `knn_blackbox.joblib`                   | Packaged preprocessing components and trained KNN model used for posture inference.                                                                          |
+The repository files are organized according to the machine learning workflow:
+
+| Step | File                                    | Description                                                                                                                                                                                |
+| ---: | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|    1 | `cross_validation.py`                   | Loads the training and validation datasets, preprocesses the data, evaluates different KNN configurations, selects the best hyperparameters, and generates validation results and figures. |
+|    2 | `train_general_model_with_train+val.py` | Combines the training and validation datasets, trains the final general KNN model, evaluates it on the independent test set, and exports the trained components.                           |
+|    3 | `knn_blackbox.joblib`                   | Contains the packaged preprocessing components and trained KNN model required for posture inference.                                                                                       |
+|    4 | `run_live_posture_monitor.py`           | Loads the packaged model, extracts posture features from a live webcam stream, classifies the user's posture, smooths the predictions, and displays real-time visual feedback.             |
+
 
 ## Technology Stack
 
