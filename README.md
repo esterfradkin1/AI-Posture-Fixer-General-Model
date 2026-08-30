@@ -57,8 +57,6 @@ Improving the recall for Bad Posture is an important direction for future develo
 
 ## Repository Structure
 
-The repository files are organized according to the machine learning workflow:
-
 | Step | File                                    | Description                                                                                                                                                                                |
 | ---: | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |    1 | `cross_validation.py`                   | Loads the training and validation datasets, preprocesses the data, evaluates different KNN configurations, selects the best hyperparameters, and generates validation results and figures. |
